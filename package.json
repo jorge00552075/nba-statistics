@@ -1,0 +1,15 @@
+{
+  "name": "nba_stats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://jorge00552075.github.io/NBA_Stats",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
