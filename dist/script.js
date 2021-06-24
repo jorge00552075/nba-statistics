@@ -60,6 +60,7 @@ const renderData = function (data, dataV1) {
     <span class="player-pos">${dataV1.position}</span>
     <span class="player-team">${dataV1.team.full_name}</span>
   </div>
+
   <div class="key-stats">
   <div>
       <span class="stats-label">GP</span>
@@ -67,19 +68,19 @@ const renderData = function (data, dataV1) {
     </div>
     <div>
       <span class="stats-label">MIN</span>
-      <span>${data.min}</span>
+      <span>${data.min.slice(0, -1).replace(":", ".")}</span>
     </div>
     <div>
       <span class="stats-label">Pts</span>
-      <span>${data.pts}</span>
+      <span>${data.pts.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">Reb</span>
-      <span>${data.reb}</span>
+      <span>${data.reb.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">Ast</span>
-      <span>${data.ast}</span>
+      <span>${data.ast.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">Stl</span>
@@ -91,39 +92,39 @@ const renderData = function (data, dataV1) {
     </div>
     <div>
       <span class="stats-label">FGA</span>
-      <span>${data.fga}</span>
+      <span>${data.fga.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">FGM</span>
-      <span>${data.fgm}</span>
+      <span>${data.fgm.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">FG%</span>
-      <span>${data.fg_pct}</span>
+      <span>${(data.fg_pct * 100).toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">3PA</span>
-      <span>${data.fg3a}</span>
+      <span>${data.fg3a.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">3PM</span>
-      <span>${data.fg3m}</span>
+      <span>${data.fg3m.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">3P%</span>
-      <span>${data.fg3_pct}</span>
+      <span>${(data.fg3_pct * 100).toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">FTA</span>
-      <span>${data.fta}</span>
+      <span>${data.fta.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">FTM</span>
-      <span>${data.fgm}</span>
+      <span>${data.fgm.toFixed(1)}</span>
     </div>
     <div>
       <span class="stats-label">FT%</span>
-      <span>${data.ft_pct}</span>
+      <span>${(data.ft_pct * 100).toFixed(1)}</span>
     </div>
   </div>
 </div>

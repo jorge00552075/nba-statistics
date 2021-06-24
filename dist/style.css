@@ -150,6 +150,9 @@ button:active {
 }
 
 .key-stats > * {
+  height: auto;
+  width: 7rem;
+
   font-size: 2.8rem;
   display: flex;
   flex-direction: column;
@@ -157,7 +160,7 @@ button:active {
   justify-content: center;
   align-items: center;
 
-  padding: 1.25rem;
+  padding: 1rem;
   margin-top: 0.5rem;
   margin-right: 2rem;
 }
