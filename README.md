@@ -1,5 +1,5 @@
-# NBA_Stats
+### nba-statistics-api
 
-NBA stats web app. <br />
-Search for current season stats by player. <br />
-Built using the balldontlie Api.
+## This project is a simple app that display nba player statistics <br/> for the current year using the balldontlie API.
+
+(https://www.balldontlie.io)[https://www.balldontlie.io]
